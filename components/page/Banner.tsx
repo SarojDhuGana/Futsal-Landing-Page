@@ -5,7 +5,7 @@ export default function Banner() {
       style={{ backgroundImage: `url('/img/banner-1.jpg')` }}
     >
       <div className="absolute inset-0 bg-linear-to-r bg-blue-300/20 via-black/10 to-black/10"></div>
-      <div className="relative text-white text-center  max-w-5xl">
+      <div className="relative text-white text-center max-w-5xl md:ml-20">
         <h1 className="text-5xl md:text-5xl font-bold text-gray-100 w-full">
           <span className="text-yellow-500">Join us</span> and Become a
         </h1>

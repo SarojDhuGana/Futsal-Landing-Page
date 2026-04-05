@@ -5,7 +5,8 @@ import Blog1 from "../assets/blog1.jpg";
 import Blog2 from "../assets/blog5.jpg";
 import Blog3 from "../assets/blog3.jpg";
 import Blog4 from "../assets/blog4.jpg";
-import { User, ArrowRight } from "lucide-react";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import PersonIcon from "@mui/icons-material/Person";
 
 export const blogPosts = [
   {
@@ -146,7 +147,7 @@ export default function BlogsPage() {
               <div className="flex flex-col grow py-2 px-3">
                 <div className="flex items-center gap-4 text-sm text-gray-500 mb-3 flex-wrap">
                   <div className="flex items-start gap-1">
-                    <User size={14} aria-hidden="true" className="mt-1" />
+                    <PersonIcon fontSize="medium" className="mt-1" />
                     <span className="text-md text-center">{post.author}</span>
                   </div>
                 </div>
@@ -167,7 +168,7 @@ export default function BlogsPage() {
                     className="text-green-600 font-semibold flex items-center gap-1 hover:gap-2 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 rounded px-2 py-1"
                     aria-label={`Read more about ${post.title}`}
                   >
-                    Read More <ArrowRight size={16} aria-hidden="true" />
+                    Read More <ArrowForwardIcon fontSize="small" />
                   </Link>
                 </div>
               </div>

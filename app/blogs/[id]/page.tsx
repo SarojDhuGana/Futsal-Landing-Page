@@ -1,7 +1,6 @@
 "use client";
-
 import { useParams } from "next/navigation";
-import { Calendar, User, ArrowRight } from "lucide-react";
+import PersonIcon from "@mui/icons-material/Person";
 import Image from "next/image";
 import { blogPosts } from "../page";
 import Link from "next/link";
@@ -30,8 +29,8 @@ export default function BlogDetailsPage() {
           {blog.title}
         </h1>
         <p className="text-gray-500 mb-4 flex gap-2">
-          <User size={15} />
-          <span className="font-semibold text-green-600 text-md -mt-1">
+          <PersonIcon fontSize="small" />
+          <span className="font-semibold text-green-600 text-md mt-2">
             {blog.author}
           </span>
         </p>

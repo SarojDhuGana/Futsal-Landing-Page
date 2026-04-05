@@ -9,7 +9,9 @@ import gallery5 from "../assets/gallery/gallery5.jpg";
 import gallery6 from "../assets/gallery/gallery6.jpg";
 import gallery7 from "../assets/gallery/gallery7.jpeg";
 import gallery8 from "../assets/gallery/gallery8.jpeg";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import CloseIcon from "@mui/icons-material/Close";
 
 const galleryImages = [
   {
@@ -146,14 +148,14 @@ export default function Gallery() {
               className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition duration-300"
               aria-label="Previous image"
             >
-              <ChevronLeft size={30} />
+              <ArrowBackIcon fontSize="medium" />
             </button>
             <button
               onClick={nextSlide}
               className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition duration-300"
               aria-label="Next image"
             >
-              <ChevronRight size={30} />
+              <ArrowForwardIcon fontSize="medium" />
             </button>
 
             <div className="absolute bottom-20 left-0 right-0 flex justify-center gap-2">
@@ -197,14 +199,14 @@ export default function Gallery() {
             onClick={() => setIsModalOpen(false)}
             className="absolute top-4 right-4 text-white hover:text-green-600 transition"
           >
-            <X size={40} />
+            <CloseIcon fontSize="medium" />
           </button>
 
           <button
             onClick={prevSlide}
             className="absolute left-4 text-white hover:text-green-600 transition"
           >
-            <ChevronLeft size={40} />
+            <ArrowBackIcon fontSize="medium" />
           </button>
 
           <div className="relative w-full max-w-5xl h-[80vh]">
@@ -228,7 +230,7 @@ export default function Gallery() {
             onClick={nextSlide}
             className="absolute right-4 text-white hover:text-green-600 transition"
           >
-            <ChevronRight size={40} />
+            <ArrowForwardIcon fontSize="medium" />
           </button>
         </div>
       )}

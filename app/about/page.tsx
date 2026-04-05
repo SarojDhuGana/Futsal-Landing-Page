@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import gallery9 from "../assets/gallery/gallery9.jpeg";
 import Programs from "@/components/page/Programs";
+import Diversity1Icon from "@mui/icons-material/Diversity1";
 export default function AboutPage() {
   const achievements = [
     {
@@ -25,6 +26,12 @@ export default function AboutPage() {
     <section className="py-16 px-6 md:px-20 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
+          <div>
+            <Diversity1Icon
+              className="text-green-500 font-bold"
+              fontSize="large"
+            />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             About Our Academy
           </h2>
@@ -39,7 +46,7 @@ export default function AboutPage() {
               game. With state-of-the-art facilities and experienced coaches, we
               provide the perfect environment for players to grow and excel.
             </p>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-gray-600 text-lg leading-relaxed italic border-l-4 px-2 border-green-300 flex">
               Our methodology combines technical skill development, tactical
               awareness, and physical conditioning, all while fostering
               teamwork, discipline, and sportsmanship. We believe every player
@@ -60,12 +67,12 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
+          <div className="relative h-full rounded-2xl overflow-hidden shadow-xl px-2 py-2">
             <Image
               src={gallery9}
               alt="Our futsal team in action"
               fill
-              className="object-cover"
+              className="object-cover rounded-br-full rounded-t-full shadow-amber-200 shadow-2xl "
               priority
             />
           </div>
