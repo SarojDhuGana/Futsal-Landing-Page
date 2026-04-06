@@ -67,7 +67,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="relative h-full rounded-2xl overflow-hidden shadow-xl px-2 py-2">
+          <div className="relative hidden md:flex h-full rounded-2xl overflow-hidden shadow-xl px-2 py-2">
             <Image
               src={gallery9}
               alt="Our futsal team in action"

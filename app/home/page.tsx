@@ -38,7 +38,6 @@ export default function HomePage() {
           />
         </div>
       </section>
-
       {/* FAQ Sections */}
       <main>
         <FAQ />

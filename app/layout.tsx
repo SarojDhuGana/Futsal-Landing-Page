@@ -37,9 +37,10 @@ export default function RootLayout({
         <div className="px-0.5 py-5">
           <Banner />
         </div>
-        <div className="w-full flex justify-center gap-4 text-5xl p-5">
+        <div className="w-full hidden md:flex justify-center gap-4 text-5xl p-5">
           ✨⚽✨
-          <span className="animate-bounce inline-block">⚽</span>✨⚽✨⚽✨
+          <span className="animate-bounce inline-block">⚽</span>
+          ✨⚽✨⚽✨
           <span className="animate-bounce inline-block text-yellow-400">
             ⚽
           </span>
