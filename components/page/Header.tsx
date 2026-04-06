@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const headerItems = [
   { id: 1, title: "Home", href: "/" },
@@ -12,6 +13,7 @@ const headerItems = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="w-full border-b bg-white sticky top-0 z-50">
@@ -22,7 +24,11 @@ export default function Header() {
             <Link
               key={item.id}
               href={item.href}
-              className="text-gray-700 hover:text-green-600 transition capitalize"
+              className={`capitalize transition ${
+                pathname === item.href
+                  ? "text-green-400 font-semibold"
+                  : "text-gray-800 hover:text-green-400"
+              }`}
             >
               {item.title}
             </Link>
@@ -51,7 +57,11 @@ export default function Header() {
                 key={item.id}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-gray-700 hover:text-green-600 transition capitalize"
+                className={`capitalize transition ${
+                  pathname === item.href
+                    ? "text-green-400 font-semibold"
+                    : "text-gray-800 hover:text-green-400"
+                }`}
               >
                 {item.title}
               </Link>
