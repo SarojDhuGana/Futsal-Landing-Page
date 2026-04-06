@@ -30,7 +30,7 @@ export default function BlogDetailsPage() {
         </h1>
         <p className="text-gray-500 mb-4 flex gap-2">
           <PersonIcon fontSize="small" />
-          <span className="font-semibold text-green-600 text-md mt-2">
+          <span className="font-semibold text-green-600 text-md">
             {blog.author}
           </span>
         </p>

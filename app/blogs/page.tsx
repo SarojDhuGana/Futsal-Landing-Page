@@ -21,11 +21,11 @@ export const blogPosts = [
 Futsal is a fast-paced game that demands technical precision and quick decision-making.
 Every player should focus on mastering these essential skills:
 
-1. Ball Control – Keep the ball close using the sole of your foot.
-2. Quick Passing – Short and accurate passes help maintain possession.
-3. Movement Off the Ball – Always create passing options.
-4. Defensive Positioning – Anticipate your opponent’s moves.
-5. Shooting Accuracy – Placement matters more than power.
+1. Ball Control Keep the ball close using the sole of your foot.
+2. Quick Passing Short and accurate passes help maintain possession.
+3. Movement Off the Ball Always create passing options.
+4. Defensive Positioning Anticipate your opponent’s moves.
+5. Shooting Accuracy Placement matters more than power.
 
 Practice these consistently to elevate your performance on the court.
     `,
@@ -73,7 +73,7 @@ Key elements include:
 - Understanding player roles.
 
 Teams that move and think as one unit often outperform more skilled individuals.
-Build relationships through training, discussions, and shared goals.
+Build relationships through training,discussions and shared goals.
     `,
   },
   {
@@ -119,8 +119,7 @@ export default function BlogsPage() {
             aria-hidden="true"
           ></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Expert insights, training tips, and academy news to keep you
-            inspired
+            Expert insights, training tips and academy news to keep you inspired
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -147,8 +146,10 @@ export default function BlogsPage() {
               <div className="flex flex-col grow py-2 px-3">
                 <div className="flex items-center gap-4 text-sm text-gray-500 mb-3 flex-wrap">
                   <div className="flex items-start gap-1">
-                    <PersonIcon fontSize="medium" className="mt-1" />
-                    <span className="text-md text-center">{post.author}</span>
+                    <PersonIcon fontSize="medium" />
+                    <span className="text-md text-center mt-1">
+                      {post.author}
+                    </span>
                   </div>
                 </div>
                 <h2 className="text-xl font-bold text-gray-800 mb-3 line-clamp-2 group-hover:text-green-600 transition">

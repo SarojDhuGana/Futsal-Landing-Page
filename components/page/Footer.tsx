@@ -14,11 +14,11 @@ export default function Footer() {
             ⚽ Kicksy Futsal ⚽
           </h2>
           <p className="text-gray-300 text-sm md:text-base mb-6">
-            Fun, Sport, Fitness & Entertainment – Your local futsal hub!
+            Fun, Sport, Fitness & Entertainment - Your local futsal hub!
           </p>
           <p className="text-gray-400 text-xs md:text-sm">
-            Join us for exciting futsal matches, tournaments, and events in a
-            fun and safe environment.
+            Join us for exciting futsal matches, tournaments and events in a fun
+            and safe environment.
           </p>
         </div>
 
